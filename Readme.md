@@ -18,7 +18,7 @@
     - Language_zh-TW.properties
     
 ## Getting latest source files 
-execute `bash pull_pipeline_source.sh`.  For example: 
+execute `./pull_pipeline_source.sh`.  For example: 
 ```bash 
 git clone https://github.com/Osthanes/translation.git osthanes_translation
 cd osthanes_translation
