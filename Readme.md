@@ -2,6 +2,7 @@
 
 ## History 
 * Checked in human translation: pipeline_PII02_0519
+* Updated file format to Language_pt-BR.properties rather than Language_pt_BR.properties
 
 ## File format 
 * For each extension there will be a Language_en.properties file that will be the source of the translation 
@@ -10,12 +11,13 @@
     - Language_de.properties
     - Language_fr.properties    
     - Language_ja.properties     
-    - Language_pt_BR.properties  
     - Language_es.properties    
     - Language_it.properties     
     - Language_ko.properties     
     - Language_zh-CN.properties    
-    - Language_zh-TW.properties
+    - Language_zh-TW.properties    
+    - Language_pt-BR.properties  
+
     
 ## Getting latest source files 
 execute `./pull_pipeline_source.sh`.  For example: 
@@ -27,7 +29,7 @@ cd osthanes_translation
 source files will be located in osthanes_en_source_files.tar
 
 ## Uploading translated files via GIT 
-* ensure users is added to the Osthanes organization 
+* ensure user is added to the Osthanes organization 
 * clone this repository 
 * download manually translated files into local repository
 * commit and push changes 
