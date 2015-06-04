@@ -52,14 +52,14 @@ cd "${OSTHANES}"
 if [ $MISMATCH ]; then
 	echo -e "\nPlease take a moment to review the mismatched files above!\n"
 	read -r -p "Do you want to continue the push? [y/N] " response
-	if ! [[ $response =~ ^([yY][eE][sS]|[yY])$ ]]; then
+	if [[ ! $response =~ ^([yY][eE][sS]|[yY])$ ]]; then
 		echo -e "\nExit!\n"
-	    exit 1
+		exit 1
 	fi
 fi
 
 echo -e "\n### Copy files from translation directory to the repository ###"
-cp -R "${DIR}/" ./ 
+cp -R "${DIR}/" ./
 	
 echo -e "\n### Push to Github ###"
 git add *
