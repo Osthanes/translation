@@ -7,7 +7,7 @@ OSTHANES=$(pwd)
 USER=$(git config user.name)
 MISMATCH=
 
-if [ -z $DIR ]; then
+if [ -z "$DIR" ]; then
 	echo -e "\nUsage: $(basename $0) translation_dir\n"
 	exit 1
 fi
