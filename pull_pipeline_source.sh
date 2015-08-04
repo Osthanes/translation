@@ -25,6 +25,7 @@ if [ -d globalization ]; then cd globalization; echo "updating Language_en.prope
 if [ -d appscan_static_analyzer ]; then cd appscan_static_analyzer; echo "updating Language_en.properties"; git checkout -f Language_en.properties; cd ..; else git clone  --depth 1 https://github.com/Osthanes/appscan_static_analyzer.git ; fi
 if [ -d docker_builder ]; then cd docker_builder; echo "updating Language_en.properties"; git checkout -f Language_en.properties; cd ..; else git clone  --depth 1 https://github.com/Osthanes/docker_builder.git ; fi 
 if [ -d container_deployer ]; then cd container_deployer; echo "updating Language_en.properties"; git checkout -f Language_en.properties; cd ..; else git clone  --depth 1 https://github.com/Osthanes/container_deployer ; fi
+if [ -d compliance_crawler ]; then cd compliance_crawler; echo "updating Language_en.properties"; git checkout -f Language_en.properties; cd ..; else git clone  --depth 1 https://github.com/Osthanes/compliance_crawler ; fi
 
 echo "packaging up en source files to: osthanes_en_source_files.tar"
 find . -name "Language_en.properties"  | tar -cf osthanes_en_source_files.tar -T -
