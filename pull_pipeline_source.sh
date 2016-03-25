@@ -18,7 +18,8 @@ echo "making tmp directory for source"
 mkdir source_files 
 cd source_files 
 echo "cloning extension repositories"
-if [ -d update_service ]; then cd update_service; git pull; cd ..; else git clone  --depth 1 https://github.com/Osthanes/update_service.git;fi 
+if [ -d activedeploy_start ]; then cd activedeploy_start; git pull; cd ..; else git clone  --depth 1 https://github.com/Osthanes/activedeploy_start.git;fi 
+if [ -d activedeploy_finish ]; then cd activedeploy_finish; git pull; cd ..; else git clone  --depth 1 https://github.com/Osthanes/activedeploy_finish.git;fi 
 if [ -d appscan_dynamic_analyzer ]; then cd appscan_dynamic_analyzer; echo "updating Language_en.properties"; git checkout -f Language_en.properties; cd ..; else git clone  --depth 1  https://github.com/Osthanes/appscan_dynamic_analyzer.git; fi
 if [ -d notifications ]; then cd notifications; echo "updating Language_en.properties"; git checkout -f Language_en.properties; cd ..; else git clone  --depth 1 https://github.com/Osthanes/notifications.git ; fi
 if [ -d globalization ]; then cd globalization; echo "updating Language_en.properties"; git checkout -f Language_en.properties; cd ..; else git clone  --depth 1 https://github.com/Osthanes/globalization.git ; fi
